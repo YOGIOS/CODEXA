@@ -37,5 +37,13 @@ namespace CODEXA
         {
             v.vaNumer(e);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Inici frm2 = new Inici();
+
+            frm2.ShowDialog();
+            this.Close();
+        }
     }
 }
