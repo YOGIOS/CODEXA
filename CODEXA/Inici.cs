@@ -36,5 +36,12 @@ namespace CODEXA
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Agregacion frm2 = new Agregacion();
+            this.Hide();
+            frm2.ShowDialog();
+        }
     }
 }

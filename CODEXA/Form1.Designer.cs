@@ -46,15 +46,15 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(815, 454);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(1920, 1357);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.button1.Location = new System.Drawing.Point(357, 303);
+            this.button1.Location = new System.Drawing.Point(369, 303);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -103,9 +103,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(487, 77);
+            this.pictureBox2.Location = new System.Drawing.Point(247, -79);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(303, 289);
+            this.pictureBox2.Size = new System.Drawing.Size(326, 256);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
