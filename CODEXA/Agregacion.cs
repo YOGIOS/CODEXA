@@ -21,5 +21,12 @@ namespace CODEXA
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Inici frm2 = new Inici();
+            this.Hide();
+            frm2.ShowDialog();
+        }
     }
 }

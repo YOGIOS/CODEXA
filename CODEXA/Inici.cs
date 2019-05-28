@@ -43,5 +43,10 @@ namespace CODEXA
             this.Hide();
             frm2.ShowDialog();
         }
+
+        private void Inici_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

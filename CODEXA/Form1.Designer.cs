@@ -54,7 +54,7 @@
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.button1.Location = new System.Drawing.Point(369, 303);
+            this.button1.Location = new System.Drawing.Point(688, 309);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(357, 252);
+            this.txtContraseña.Location = new System.Drawing.Point(675, 256);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(100, 20);
             this.txtContraseña.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(357, 204);
+            this.txtUsuario.Location = new System.Drawing.Point(675, 216);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(281, 211);
+            this.label1.Location = new System.Drawing.Point(587, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(270, 259);
+            this.label2.Location = new System.Drawing.Point(575, 263);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 5;
@@ -103,7 +103,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(247, -79);
+            this.pictureBox2.Location = new System.Drawing.Point(565, -46);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(326, 256);
             this.pictureBox2.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 414);
+            this.ClientSize = new System.Drawing.Size(1265, 740);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -121,8 +121,9 @@
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CODEXA";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
