@@ -12,6 +12,8 @@ namespace CODEXA
 {
     public partial class Inici : Form
     {
+
+        private List<Alumno> alumnos = new List<Alumno>();
         public Inici()
         {
             InitializeComponent();
@@ -39,12 +41,27 @@ namespace CODEXA
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Agregacion frm2 = new Agregacion();
-            this.Hide();
-            frm2.ShowDialog();
+            Alumno alm = new Alumno();
+            alm.nombre = txtNombre.Text;
+            alm.carrera = txtCarrera.Text;
+           // alm.telefono = txtTelefono.TextLength;
+
+            Alumno.Add(alm);
+            actualizarGrid();
+
+        }
+        private void actualizarGrid()
+        {
+            dgvDatos.DataSource = alumnos;
+
         }
 
         private void Inici_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
