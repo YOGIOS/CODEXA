@@ -38,5 +38,12 @@ namespace CODEXA
             dvgGrid.DataSource = null;
             dvgGrid.DataSource = Alumnos;
         }
+
+        private void btnRegre_Click(object sender, EventArgs e)
+        {
+            Inicics frm2 = new Inicics();
+            this.Hide();
+            frm2.ShowDialog();
+        }
     }
 }

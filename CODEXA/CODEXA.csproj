@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actividades.cs" />
     <Compile Include="Alumno .cs" />
+    <Compile Include="Eventos.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,8 +95,17 @@
     <EmbeddedResource Include="Inicics.resx">
       <DependentUpon>Inicics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="listaActividades.resx">
+      <DependentUpon>listaActividades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="listaAlumnos.resx">
       <DependentUpon>listaAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaEventos.resx">
+      <DependentUpon>listaEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaMaetros.resx">
+      <DependentUpon>listaMaetros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

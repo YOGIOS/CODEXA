@@ -42,6 +42,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dvgGrid = new System.Windows.Forms.DataGridView();
+            this.btnRegre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgGrid)).BeginInit();
             this.SuspendLayout();
@@ -157,11 +158,22 @@
             this.dvgGrid.Size = new System.Drawing.Size(676, 385);
             this.dvgGrid.TabIndex = 12;
             // 
+            // btnRegre
+            // 
+            this.btnRegre.Location = new System.Drawing.Point(142, 345);
+            this.btnRegre.Name = "btnRegre";
+            this.btnRegre.Size = new System.Drawing.Size(75, 23);
+            this.btnRegre.TabIndex = 13;
+            this.btnRegre.Text = "Regresar";
+            this.btnRegre.UseVisualStyleBackColor = true;
+            this.btnRegre.Click += new System.EventHandler(this.btnRegre_Click);
+            // 
             // listaAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 552);
+            this.Controls.Add(this.btnRegre);
             this.Controls.Add(this.dvgGrid);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
@@ -199,5 +211,6 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dvgGrid;
+        private System.Windows.Forms.Button btnRegre;
     }
 }
