@@ -123,9 +123,10 @@
             // 
             // btnAñadir
             // 
+            this.btnAñadir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAñadir.Location = new System.Drawing.Point(142, 258);
             this.btnAñadir.Name = "btnAñadir";
-            this.btnAñadir.Size = new System.Drawing.Size(75, 23);
+            this.btnAñadir.Size = new System.Drawing.Size(129, 49);
             this.btnAñadir.TabIndex = 9;
             this.btnAñadir.Text = "Añadir";
             this.btnAñadir.UseVisualStyleBackColor = true;
@@ -133,18 +134,20 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(142, 287);
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Help;
+            this.btnEditar.Location = new System.Drawing.Point(142, 313);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.Size = new System.Drawing.Size(129, 50);
             this.btnEditar.TabIndex = 10;
-            this.btnEditar.Text = "Editar";
+            this.btnEditar.Text = "Ayuda";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(142, 316);
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.Location = new System.Drawing.Point(142, 369);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(129, 47);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -162,9 +165,10 @@
             // 
             // btnRegre
             // 
-            this.btnRegre.Location = new System.Drawing.Point(142, 345);
+            this.btnRegre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegre.Location = new System.Drawing.Point(142, 423);
             this.btnRegre.Name = "btnRegre";
-            this.btnRegre.Size = new System.Drawing.Size(75, 23);
+            this.btnRegre.Size = new System.Drawing.Size(129, 51);
             this.btnRegre.TabIndex = 13;
             this.btnRegre.Text = "Regresar";
             this.btnRegre.UseVisualStyleBackColor = true;

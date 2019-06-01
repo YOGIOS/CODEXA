@@ -53,6 +53,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // txtIDeve
             // 
@@ -96,9 +97,9 @@
             // 
             // btnAñadirEve
             // 
-            this.btnAñadirEve.Location = new System.Drawing.Point(186, 203);
+            this.btnAñadirEve.Location = new System.Drawing.Point(154, 167);
             this.btnAñadirEve.Name = "btnAñadirEve";
-            this.btnAñadirEve.Size = new System.Drawing.Size(75, 23);
+            this.btnAñadirEve.Size = new System.Drawing.Size(118, 66);
             this.btnAñadirEve.TabIndex = 6;
             this.btnAñadirEve.Text = "Añadir";
             this.btnAñadirEve.UseVisualStyleBackColor = true;
@@ -106,18 +107,19 @@
             // 
             // btnEliminarEve
             // 
-            this.btnEliminarEve.Location = new System.Drawing.Point(186, 232);
+            this.btnEliminarEve.Location = new System.Drawing.Point(154, 239);
             this.btnEliminarEve.Name = "btnEliminarEve";
-            this.btnEliminarEve.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarEve.Size = new System.Drawing.Size(118, 68);
             this.btnEliminarEve.TabIndex = 7;
             this.btnEliminarEve.Text = "Eliminar";
             this.btnEliminarEve.UseVisualStyleBackColor = true;
+            this.btnEliminarEve.Click += new System.EventHandler(this.btnEliminarEve_Click);
             // 
             // btnAyda
             // 
-            this.btnAyda.Location = new System.Drawing.Point(186, 261);
+            this.btnAyda.Location = new System.Drawing.Point(154, 313);
             this.btnAyda.Name = "btnAyda";
-            this.btnAyda.Size = new System.Drawing.Size(75, 23);
+            this.btnAyda.Size = new System.Drawing.Size(118, 59);
             this.btnAyda.TabIndex = 8;
             this.btnAyda.Text = "Ayudar";
             this.btnAyda.UseVisualStyleBackColor = true;
@@ -125,9 +127,9 @@
             // 
             // btnR
             // 
-            this.btnR.Location = new System.Drawing.Point(186, 290);
+            this.btnR.Location = new System.Drawing.Point(154, 378);
             this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(75, 23);
+            this.btnR.Size = new System.Drawing.Size(118, 65);
             this.btnR.TabIndex = 9;
             this.btnR.Text = "Regresar";
             this.btnR.UseVisualStyleBackColor = true;
@@ -141,6 +143,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(635, 302);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // listaEventos
             // 

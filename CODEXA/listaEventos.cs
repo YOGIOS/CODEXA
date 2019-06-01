@@ -13,6 +13,7 @@ namespace CODEXA
     public partial class listaEventos : Form
     {
         private List<Eventos> even = new List<Eventos>();
+        private int edit_indx = -1;
         public listaEventos()
         {
             InitializeComponent();
@@ -39,14 +40,73 @@ namespace CODEXA
             eve.Tipo = txttipoEve.Text;
             eve.Fecha = txtFechaEve.Text;
             eve.Lugar_Evento = txtLugarEve.Text;
-            even.Add(eve);
+            if (edit_indx > -1)
+            {
+                even[edit_indx] = eve;
+                edit_indx = -1;
+
+            }
+            else
+            {
+                even.Add(eve);
+            }
+         
             actualizacionDataGrid();
+            LimpiarDatos();
         }
         private void actualizacionDataGrid()
         {
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = even;
            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            DataGridViewRow seleccionada = dataGridView1.SelectedRows[0];
+            int pos = dataGridView1.Rows.IndexOf(seleccionada);
+            edit_indx = pos;
+            Eventos eve = even[pos];
+            txtIDeve.Text = eve.ID_Evento;
+            txtNombreEve.Text = eve.Nombre_Evento;
+            txttipoEve.Text = eve.Tipo;
+            txtFechaEve.Text = eve.Fecha;
+            txtLugarEve.Text = eve.Lugar_Evento;
+        }
+        private void LimpiarDatos()
+        {
+            txtIDeve.Text = "";
+            txtNombreEve.Text = "";
+            txttipoEve.Text = "";
+            txtFechaEve.Text = "";
+            txtLugarEve.Text = "";
+
+
+        }
+
+        private void btnEliminarEve_Click(object sender, EventArgs e)
+        {
+            if (edit_indx > -1)
+            {
+                even.RemoveAt(edit_indx);
+                edit_indx = -1;
+                LimpiarDatos();
+                actualizacionDataGrid();
+            }
+            else
+            {
+                MessageBox.Show("Presione el boton AYUDA para saber como ingresar al modo edicion");
+            }
         }
     }
 }
