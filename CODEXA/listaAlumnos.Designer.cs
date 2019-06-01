@@ -148,6 +148,7 @@
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // dvgGrid
             // 
@@ -157,6 +158,7 @@
             this.dvgGrid.Name = "dvgGrid";
             this.dvgGrid.Size = new System.Drawing.Size(676, 385);
             this.dvgGrid.TabIndex = 12;
+            this.dvgGrid.DoubleClick += new System.EventHandler(this.dvgGrid_DoubleClick);
             // 
             // btnRegre
             // 
