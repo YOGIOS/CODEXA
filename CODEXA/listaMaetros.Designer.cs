@@ -103,6 +103,7 @@
             this.btnEliminarMs.TabIndex = 7;
             this.btnEliminarMs.Text = "Eliminar";
             this.btnEliminarMs.UseVisualStyleBackColor = true;
+            this.btnEliminarMs.Click += new System.EventHandler(this.btnEliminarMs_Click);
             // 
             // button3
             // 
@@ -132,6 +133,7 @@
             this.dvgFR.Name = "dvgFR";
             this.dvgFR.Size = new System.Drawing.Size(593, 317);
             this.dvgFR.TabIndex = 10;
+            this.dvgFR.DoubleClick += new System.EventHandler(this.dvgFR_DoubleClick);
             // 
             // listaMaetros
             // 

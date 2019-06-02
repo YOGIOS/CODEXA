@@ -93,6 +93,7 @@
             this.dgvGrid.Name = "dgvGrid";
             this.dgvGrid.Size = new System.Drawing.Size(709, 385);
             this.dgvGrid.TabIndex = 5;
+            this.dgvGrid.DoubleClick += new System.EventHandler(this.dgvGrid_DoubleClick);
             // 
             // btnAñadr
             // 
@@ -112,6 +113,7 @@
             this.btnElimn.TabIndex = 7;
             this.btnElimn.Text = "Eliminar";
             this.btnElimn.UseVisualStyleBackColor = true;
+            this.btnElimn.Click += new System.EventHandler(this.btnElimn_Click);
             // 
             // btnAyuda
             // 

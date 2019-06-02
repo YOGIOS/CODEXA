@@ -13,6 +13,7 @@ namespace CODEXA
     public partial class listaActividades : Form
     {
         private List<Actividades> Actividad = new List<Actividades>();
+        private int edit_indx = -1;
         public listaActividades()
         {
             InitializeComponent();
@@ -37,13 +38,59 @@ namespace CODEXA
             act.Nombre_Actividad = txtNombreACT.Text;
             act.Docente = txtDocenteACT.Text;
             act.Grupo = txtGrupoACT.Text;
-            Actividad.Add(act);
+            if(edit_indx > -1)
+            {
+                Actividad[edit_indx] = act;
+                edit_indx = -1;
+
+            }
+            else
+            {
+                Actividad.Add(act);
+            }
+            
             ActuallizacionData();
+            limpiar();
         }
         private void ActuallizacionData()
         {
             dgvGrid.DataSource = null;
             dgvGrid.DataSource = Actividad;
         }
+        private void limpiar()
+        {
+            txtIDACT.Text = "";
+            txtNombreACT.Text = "";
+            txtDocenteACT.Text = "";
+            txtGrupoACT.Text = "";
+
+        }
+        private void dgvGrid_DoubleClick(object sender, EventArgs e)
+        {
+            DataGridViewRow seleccionada = dgvGrid.SelectedRows[0];
+            int pos = dgvGrid.Rows.IndexOf(seleccionada);
+            edit_indx = pos;
+            Actividades act = Actividad[pos];
+            txtIDACT.Text = act.ID_Actividad;
+            txtNombreACT.Text = act.Nombre_Actividad;
+            txtDocenteACT.Text = act.Docente;
+            txtGrupoACT.Text = act.Grupo;
+        }
+        private void btnElimn_Click(object sender, EventArgs e)
+        {
+            if (edit_indx > -1)
+            {
+                Actividad.RemoveAt(edit_indx);
+                edit_indx = -1;
+                limpiar();
+                ActuallizacionData();
+            }
+            else
+            {
+                MessageBox.Show("Presione el boton AYUDA para saber como ingresar al modo edicion");
+            }
+        }
+
+       
     }
 }
