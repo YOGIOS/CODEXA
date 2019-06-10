@@ -59,7 +59,7 @@
             this.txtIDACT.Name = "txtIDACT";
             this.txtIDACT.Size = new System.Drawing.Size(188, 20);
             this.txtIDACT.TabIndex = 1;
-            this.txtIDACT.Text = "ID evento";
+            this.txtIDACT.Text = "ID Actividad";
             // 
             // txtNombreACT
             // 
@@ -67,7 +67,7 @@
             this.txtNombreACT.Name = "txtNombreACT";
             this.txtNombreACT.Size = new System.Drawing.Size(188, 20);
             this.txtNombreACT.TabIndex = 2;
-            this.txtNombreACT.Text = "Nombre del evento";
+            this.txtNombreACT.Text = "Nombre de la Actividad";
             // 
             // txtDocenteACT
             // 

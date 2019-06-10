@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace CODEXA
 {
@@ -99,6 +102,16 @@ namespace CODEXA
             {
                 MessageBox.Show("Debe de ingresar al modo edicion para poder eliminar esta informacion, presione el boton de ayuda para saber como ingresar a este modo");
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Document document = new Document();
+            PdfWriter.GetInstance(document, new FileStream("C:/C++POO/PRUEBA.pdf", FileMode.Create));
+            document.Open();
+            Paragraph p = new Paragraph("Constancia de acreditacion de la actividad complementaria");
+            document.Add(p);
+            document.Close();
         }
     }
 }

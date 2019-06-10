@@ -43,6 +43,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dvgGrid = new System.Windows.Forms.DataGridView();
             this.btnRegre = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgGrid)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +80,7 @@
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(202, 20);
             this.txtEdad.TabIndex = 3;
-            this.txtEdad.Text = "Edad";
+            this.txtEdad.Text = "Fecha de Nacimiento";
             // 
             // txtGenero
             // 
@@ -174,11 +175,23 @@
             this.btnRegre.UseVisualStyleBackColor = true;
             this.btnRegre.Click += new System.EventHandler(this.btnRegre_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.Location = new System.Drawing.Point(345, 438);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(251, 92);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Generar PDF";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // listaAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 552);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRegre);
             this.Controls.Add(this.dvgGrid);
             this.Controls.Add(this.btnEliminar);
@@ -218,5 +231,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dvgGrid;
         private System.Windows.Forms.Button btnRegre;
+        private System.Windows.Forms.Button button1;
     }
 }

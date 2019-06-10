@@ -44,5 +44,13 @@ namespace CODEXA
             this.Hide();
             frm2.ShowDialog();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            PaseDeLista frm2 = new PaseDeLista();
+            this.Hide();
+            frm2.ShowDialog();
+
+        }
     }
 }
